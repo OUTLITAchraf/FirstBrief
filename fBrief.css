@@ -1,3 +1,5 @@
 * {
-    scroll-padding-top: 150px;
+    scroll-padding-top: 20%;
+    scroll-behavior: smooth;
 }
+

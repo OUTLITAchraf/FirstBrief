@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/fBrief.css" />
     <title>Workly</title>
   </head>
-
   <body>
-    <nav class="sticky top-0 bg-gray-100 z-50">
+    <nav class="sticky top-0 bg-gray-100">
       <div
         class="flex items-center justify-between max-w-7xl mx-auto px-4 py-2"
       >
@@ -42,40 +41,40 @@
         </button>
         <ul
           id="nav-menu"
-          class="hidden flex-col space-y-4 absolute top-20 left-0 w-full bg-gray-100 px-8 py-4 md:static md:flex md:flex-row md:space-x-8 md:space-y-0 md:w-auto md:bg-transparent md:px-0 md:py-0"
+          class="hidden flex-col space-y-4 justify-items-center absolute top-20 left-0 w-full bg-gray-100 px-8 py-4 md:static md:flex md:flex-row md:space-x-8 md:space-y-0 md:w-auto md:px-0 md:py-0"
         >
-          <li>
+          <li class="active:underline md:active:no-underline">
             <a
               href="#"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2"
               >Home</a
             >
           </li>
-          <li>
+          <li class="active:underline md:active:no-underline">
             <a
               href="#offre"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2"
               >Offre</a
             >
           </li>
-          <li>
+          <li class="active:underline md:active:no-underline">
             <a
               href="#about"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2"
               >About</a
             >
           </li>
-          <li>
+          <li class="active:underline md:active:no-underline">
             <a
               href="#faq"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2"
               >FAQ</a
             >
           </li>
-          <li>
+          <li class="active:underline md:active:no-underline">
             <a
               href="#contactus"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2"
               >Contact Us</a
             >
           </li>
@@ -158,7 +157,9 @@
       </div>
       <div class="flex flex-col md:flex-row mt-8 md:mt-16 ml-4 md:ml-30">
         <div class="md:basis-1/4 md:ml-15 md:mr-10 mb-8 md:mb-0">
-          <div class="flex items-center mb-3 md:mb-5">
+          <div
+            class="flex items-center justify-center md:justify-start mb-3 md:mb-5"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -184,7 +185,9 @@
           </p>
         </div>
         <div class="md:basis-1/4 md:mr-10 mb-8 md:mb-0">
-          <div class="flex items-center mb-3 md:mb-5">
+          <div
+            class="flex items-center justify-center md:justify-start mb-3 md:mb-5"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -212,7 +215,9 @@
           </p>
         </div>
         <div class="md:basis-1/4 md:mr-10 mb-8 md:mb-0">
-          <div class="flex items-center mb-3 md:mb-5">
+          <div
+            class="flex items-center justify-center md:justify-start mb-3 md:mb-5"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -239,7 +244,9 @@
           </p>
         </div>
         <div class="md:basis-1/4 md:mr-20">
-          <div class="flex items-center mb-3 md:mb-5">
+          <div
+            class="flex items-center justify-center md:justify-start mb-3 md:mb-5"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -267,7 +274,7 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row mt-8 md:mt-20 mb-8 md:mb-20">
+      <div class="flex flex-col md:flex-row mt-8 md:mt-10 mb-8 md:mb-20">
         <div class="md:basis-2/3 ml-4 md:ml-30 mt-4 md:mt-10">
           <h3
             class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center md:text-left"
@@ -301,7 +308,7 @@
         </h3>
         <div class="flex flex-col md:flex-row mx-4 md:mx-30 my-8 md:my-20">
           <div
-            class="md:basis-1/2 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
+            class="md:basis-1/2 ml-5 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
           >
             <h6 class="text-xl md:text-3xl italic font-semibold">
               Privet Space
@@ -311,7 +318,7 @@
               alt=""
               class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-row justify-between mr-5 md:flex-row">
               <button
                 class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
@@ -332,12 +339,12 @@
                 </svg>
               </button>
               <span
-                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-40"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-30"
                 >200 DH</span
               >
             </div>
           </div>
-          <div class="md:basis-1/2">
+          <div class="md:basis-1/2 ml-5">
             <h6 class="text-xl md:text-3xl italic font-semibold">
               Lifestyle Space
             </h6>
@@ -346,7 +353,7 @@
               alt=""
               class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-row justify-between mr-5 md:flex-row">
               <button
                 class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
@@ -367,7 +374,7 @@
                 </svg>
               </button>
               <span
-                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-48"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-38"
                 >300 DH</span
               >
             </div>
@@ -375,7 +382,7 @@
         </div>
         <div class="flex flex-col md:flex-row mx-4 md:mx-30 my-8 md:my-20">
           <div
-            class="md:basis-1/2 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
+            class="md:basis-1/2 ml-5 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
           >
             <h6 class="text-xl md:text-3xl italic font-semibold">
               corporat Space
@@ -385,7 +392,7 @@
               alt=""
               class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-row justify-between mr-5 md:flex-row">
               <button
                 class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
@@ -406,21 +413,21 @@
                 </svg>
               </button>
               <span
-                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-40"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-30"
                 >450 DH</span
               >
             </div>
           </div>
-          <div class="md:basis-1/2">
+          <div class="md:basis-1/2 ml-5">
             <h6 class="text-xl md:text-3xl italic font-semibold">
-              Full-Service
+               Full-Service
             </h6>
             <img
               src="./img/HighEndFullService.jpg"
               alt=""
               class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-row justify-between mr-5 md:flex-row">
               <button
                 class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
@@ -441,12 +448,88 @@
                 </svg>
               </button>
               <span
-                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-48"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-38"
                 >500 DH</span
               >
             </div>
           </div>
         </div>
+        <!-- <div
+          class="flex-row justify-between mr-5lex-col md:flex-row mx-4 md:mx-30 my-8 md:my-20"
+        >
+          <div
+            class="md:basis-1/2 ml-5 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
+          >
+            <h6 class="text-xl md:text-3xl italic font-semibold">
+              corporat Space
+            </h6>
+            <img
+              src="./img/Corporate_Professional_1.jpg"
+              alt=""
+              class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
+            />
+            <div class="flex flex-row justify-between mr-5 md:flex-row">
+              <button
+                class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
+              >
+                Rent
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+              <span
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-40 md:mr-40"
+                >450 DH</span
+              >
+            </div>
+          </div>
+          <div class="md:basis-1/2 ml-5">
+            <h6 class="text-xl md:text-3xl italic font-semibold">
+              Full-Service
+            </h6>
+            <img
+              src="./img/HighEndFullService.jpg"
+              alt=""
+              class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
+            />
+            <div class="flex flex-row justify-between mr-5 mb-10 md:flex-row">
+              <button
+                class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
+              >
+                Rent
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+              <span
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-40 md:mr-48"
+                >500 DH</span
+              >
+            </div>
+          </div>
+        </div> -->
       </div>
       <hr class="mx-4 md:mx-50 border-2 border-gray-500" />
       <div id="about" class="mt-8 md:mt-20 mb-8 md:mb-20">
@@ -476,33 +559,33 @@
           FAQ
         </h2>
         <p
-          class="text-lg md:text-2xl leading-relaxed mt-8 md:mt-20 mx-4 md:mx-30 text-start"
+          class="text-lg ml-10 md:text-2xl leading-relaxed mt-8 md:mt-20 mx-4 md:mx-30 text-start"
         >
-          <span class="font-bold leading-15 text-xl md:text-3xl"
+          <span class="font-bold leading-15 text-l md:text-3xl"
             >1. What is a coworking space? </span
           ><br />
           A coworking space is a shared office environment where individuals and
           teams can work independently or collaboratively. It’s ideal for
           freelancers, startups, remote workers, and businesses looking for a
           flexible and professional workspace. <br />
-          <span class="font-bold leading-15 text-xl md:text-3xl"
+          <span class="font-bold leading-15 text-l md:text-3xl"
             >2. What types of plans do you offer? </span
           ><br />
           We offer flexible options including hot desks, dedicated desks,
           private offices, meeting room rentals, and virtual office packages.
           You can choose hourly, daily, monthly, or custom plans based on your
           needs. <br />
-          <span class="font-bold leading-15 text-xl md:text-3xl"
+          <span class="font-bold leading-15 text-l md:text-3xl"
             >3. Can I book a space for just one day? </span
           ><br />
           Yes! We offer day passes that give you full access to our coworking
           space and amenities for the day. <br />
-          <span class="font-bold leading-15 text-xl md:text-3xl"
+          <span class="font-bold leading-15 text-l md:text-3xl"
             >4. Do you offer high-speed internet? </span
           ><br />
           Absolutely. All our members enjoy fast, secure, and reliable Wi-Fi
           throughout the workspace. <br />
-          <span class="font-bold leading-15 text-xl md:text-3xl"
+          <span class="font-bold leading-15 text-l md:text-3xl"
             >5. Are meeting rooms included in the membership? </span
           ><br />
           Some plans include a set number of meeting room hours each month.
