@@ -9,63 +9,97 @@
   </head>
 
   <body>
-    <nav class="sticky top-0 bg-gray-100">
-      <div class="flex items-center justify-between max-w-7xl mx-auto">
+    <nav class="sticky top-0 bg-gray-100 z-50">
+      <div
+        class="flex items-center justify-between max-w-7xl mx-auto px-4 py-2"
+      >
         <a href="#" class="flex items-center">
           <img
             src="./img/logo/Work-removebg-preview.png"
             width="80px"
             height="80px"
-            class=""
             alt="Workly Logo"
           />
         </a>
-        <ul class="flex space-x-8">
+        <button
+          id="menu-toggle"
+          class="md:hidden text-blue-500 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <ul
+          id="nav-menu"
+          class="hidden flex-col space-y-4 absolute top-20 left-0 w-full bg-gray-100 px-8 py-4 md:static md:flex md:flex-row md:space-x-8 md:space-y-0 md:w-auto md:bg-transparent md:px-0 md:py-0"
+        >
           <li>
             <a
               href="#"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition rounded px-2 py-2"
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
               >Home</a
             >
           </li>
           <li>
             <a
               href="#offre"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition rounded px-2 py-2"
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
               >Offre</a
             >
           </li>
           <li>
             <a
               href="#about"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition rounded px-2 py-2"
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
               >About</a
             >
           </li>
           <li>
             <a
               href="#faq"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition rounded px-2 py-2"
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
               >FAQ</a
             >
           </li>
           <li>
             <a
               href="#contactus"
-              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition rounded px-2 py-2"
+              class="text-blue-500 font-semibold hover:bg-blue-500 hover:text-white rounded px-2 py-2 active:bg-blue-300 focus:outline-none focus:ring-blue-500 transition w-full md:w-auto "
               >Contact Us</a
             >
           </li>
         </ul>
       </div>
     </nav>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+      });
+    </script>
     <main>
-      <div id="#" class="ml-30 mt-8">
-        <h1 class="text-6xl text-blue-500 font-semibold font-Roboto">
+      <div id="#" class="ml-4 mt-8 md:ml-30">
+        <h1
+          class="text-3xl md:text-6xl text-blue-500 font-semibold font-Roboto text-center md:text-left"
+        >
           Choose your Coworking Space
         </h1>
-        <div class="flex mt-16">
-          <p class="basis-2/3 text-3xl ml-16 mr-10 leading-relaxed">
+        <div class="flex flex-col md:flex-row mt-8 md:mt-16 items-center">
+          <p
+            class="text-lg md:basis-2/3 md:text-3xl md:ml-16 md:mr-10 leading-relaxed mb-6 md:mb-0"
+          >
             For those who love the concept of community and a dynamic shared
             space, but aren't willing to sacrifice their standards of
             performance, comfort and aesthetics. Thoughtfully designed to
@@ -74,45 +108,57 @@
           <img
             src="./img/Cluster-min.jpg"
             alt="imfMain"
-            class="basis-1/3 max-w-120 max-h-110 rounded-lg mr-36"
+            class="w-full md:basis-1/3 max-w-xs md:max-w-120 max-h-60 md:max-h-110 rounded-lg md:mr-36"
           />
         </div>
       </div>
-      <div class="flex mt-16 ml-5">
+      <div
+        class="flex flex-col md:flex-row mt-8 md:mt-16 ml-4 md:ml-5 items-center"
+      >
         <img
           src="./img/img.jpg"
           alt="imfMain"
-          class="basis-1/3 ml-24 max-w-120 max-h-110 rounded-lg"
+          class="w-full md:basis-1/3 md:ml-24 max-w-xs md:max-w-120 max-h-60 md:max-h-110 rounded-lg mb-6 md:mb-0"
         />
-        <div class="basis-2/3 ml-16 mr-16">
-          <h2 class="text-5xl text-blue-500 font-semibold font-Roboto mb-10">
+        <div class="md:basis-2/3 md:ml-16 md:mr-16">
+          <h2
+            class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto mb-4 md:mb-10 text-center md:text-left"
+          >
             Comfortable Space
           </h2>
-          <p class="text-3xl font-Inria-Sans leading-relaxed">
+          <p
+            class="text-lg md:text-3xl font-Inria-Sans leading-relaxed text-center md:text-left"
+          >
             For you who craving for working flexibly, creatively, and
             conveniently, let us escape from the isolation of regular office.
             Escalate your work style by using a workplace
           </p>
         </div>
       </div>
-      <div class="mt-16 ml-30">
-        <p class="text-4xl font-semibold">Why choose us ?</p>
-        <div class="flex items-center mt-15 mr-25">
+      <div class="mt-8 md:mt-16 ml-4 md:ml-30">
+        <p class="text-2xl md:text-4xl font-semibold text-center md:text-left">
+          Why choose us ?
+        </p>
+        <div
+          class="flex flex-col md:flex-row items-center mt-8 md:mt-15 md:mr-25"
+        >
           <h2
-            class="basis-1/3 text-5xl text-blue-500 font-semibold font-Roboto"
+            class="md:basis-1/3 text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center md:text-left"
           >
             Room & Facilities
           </h2>
-          <p class="basis-2/3 text-2xl leading-relaxed ml-35">
+          <p
+            class="md:basis-2/3 text-lg md:text-2xl leading-relaxed md:ml-35 text-center md:text-left mt-5"
+          >
             We will facilitate your needs with exhaustive utility and
             sophisticated technology in supporting your work to run smoothly and
             good energy
           </p>
         </div>
       </div>
-      <div class="flex mt-16 ml-30">
-        <div class="basis-1/4 ml-15 mr-10">
-          <div class="flex mb-5">
+      <div class="flex flex-col md:flex-row mt-8 md:mt-16 ml-4 md:ml-30">
+        <div class="md:basis-1/4 md:ml-15 md:mr-10 mb-8 md:mb-0">
+          <div class="flex items-center mb-3 md:mb-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -130,15 +176,15 @@
               <path d="M5 12.859a10 10 0 0 1 14 0" />
               <path d="M8.5 16.429a5 5 0 0 1 7 0" />
             </svg>
-            <h3 class="ml-3 text-2xl">Wifi</h3>
+            <h3 class="ml-3 text-xl md:text-2xl">Wifi</h3>
           </div>
-          <p>
+          <p class="text-center md:text-left">
             Life is better connected, high speed internet access is available at
             Wellspace
           </p>
         </div>
-        <div class="basis-1/4 mr-10">
-          <div class="flex mb-5">
+        <div class="md:basis-1/4 md:mr-10 mb-8 md:mb-0">
+          <div class="flex items-center mb-3 md:mb-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -158,15 +204,15 @@
               />
               <path d="M6 2v2" />
             </svg>
-            <h3 class="ml-3 text-2xl">Pantry</h3>
+            <h3 class="ml-3 text-xl md:text-2xl">Pantry</h3>
           </div>
-          <p>
+          <p class="text-center md:text-left">
             Boost your mood and energy with good cup of drinks. We provide
             coffee and tea for you to enjoy while working.
           </p>
         </div>
-        <div class="basis-1/4 mr-10">
-          <div class="flex mb-5">
+        <div class="md:basis-1/4 md:mr-10 mb-8 md:mb-0">
+          <div class="flex items-center mb-3 md:mb-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -185,15 +231,15 @@
               <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" />
               <rect x="6" y="14" width="12" height="8" rx="1" />
             </svg>
-            <h3 class="ml-3 text-2xl">Printer</h3>
+            <h3 class="ml-3 text-xl md:text-2xl">Printer</h3>
           </div>
-          <p>
+          <p class="text-center md:text-left">
             In supporting your work to keep convenient, we provide printer,
             scanner and service.
           </p>
         </div>
-        <div class="basis-1/4 mr-20">
-          <div class="flex mb-5">
+        <div class="md:basis-1/4 md:mr-20">
+          <div class="flex items-center mb-3 md:mb-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="34"
@@ -213,51 +259,61 @@
               <path d="M5 18v2" />
               <path d="M19 18v2" />
             </svg>
-            <h3 class="ml-3 text-2xl">Lounge</h3>
+            <h3 class="ml-3 text-xl md:text-2xl">Lounge</h3>
           </div>
-          <p>
+          <p class="text-center md:text-left">
             Meet our fun and friendly host who will assist you to fulfill your
             needs.
           </p>
         </div>
       </div>
-      <div class="flex mt-20 mb-20">
-        <div class="basis-2/3 ml-30 mt-10">
-          <h3 class="text-5xl text-blue-500 font-semibold font-Roboto">
+      <div class="flex flex-col md:flex-row mt-8 md:mt-20 mb-8 md:mb-20">
+        <div class="md:basis-2/3 ml-4 md:ml-30 mt-4 md:mt-10">
+          <h3
+            class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center md:text-left"
+          >
             We Make it Easy to Run your Office
           </h3>
-          <p class="text-2xl leading-relaxed mt-10">
+          <p
+            class="text-lg md:text-2xl leading-relaxed mt-4 md:mt-10 text-center md:text-left"
+          >
             Whether you are looking for a spaces for yourself, your team or
             five, or hundred of your employe. we got you covered with our
             beutiful working spaces.
           </p>
         </div>
-        <div class="basis-1/3 mr-20 ml-15">
+        <div
+          class="md:basis-1/3 md:mr-20 md:ml-15 flex justify-center items-center mt-4 md:mt-0"
+        >
           <img
             src="./img/9c9a1a6674d59a8c57dbe067fb610c806d22ceb3=w700.webp"
             alt=""
-            class="max-w-100 max-h-100 rounded-lg"
+            class="w-full max-w-xs md:max-w-100 md:max-h-100 rounded-lg"
           />
         </div>
       </div>
-      <hr class="mx-50 border-2 border-gray-500" />
+      <hr class="mx-4 md:mx-50 border-2 border-gray-500" />
       <div id="offre">
         <h3
-          class="text-5xl text-blue-500 font-semibold font-Roboto text-center mt-20"
+          class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center mt-8 md:mt-20"
         >
           Available Space
         </h3>
-        <div class="flex mx-30 my-20">
-          <div class="basis-1/2 ml-35 mr-35 border-r-2 border-black pr-10">
-            <h6 class="text-3xl italic font-semibold">Privet Space</h6>
+        <div class="flex flex-col md:flex-row mx-4 md:mx-30 my-8 md:my-20">
+          <div
+            class="md:basis-1/2 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
+          >
+            <h6 class="text-xl md:text-3xl italic font-semibold">
+              Privet Space
+            </h6>
             <img
               src="./img/Privet Space.webp"
               alt=""
-              class="max-w-80 max-h-80 rounded-lg mt-5"
+              class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex">
+            <div class="flex flex-col md:flex-row">
               <button
-                class="basis-1/3 bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
+                class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
                 Rent
                 <svg
@@ -276,21 +332,23 @@
                 </svg>
               </button>
               <span
-                class="basis-2/3 text-end mr-40 self-center mt-5 text-xl font-bold"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-40"
                 >200 DH</span
               >
             </div>
           </div>
-          <div class="basis-1/2">
-            <h6 class="text-3xl italic font-semibold">Lifestyle Space</h6>
+          <div class="md:basis-1/2">
+            <h6 class="text-xl md:text-3xl italic font-semibold">
+              Lifestyle Space
+            </h6>
             <img
               src="./img/Lifestyle  Space.jpg"
               alt=""
-              class="max-w-80 max-h-80 rounded-lg mt-5"
+              class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex">
+            <div class="flex flex-col md:flex-row">
               <button
-                class="basis-1/3 bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
+                class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
                 Rent
                 <svg
@@ -309,23 +367,27 @@
                 </svg>
               </button>
               <span
-                class="basis-2/3 text-end self-center mt-5 text-xl font-bold mr-48"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-48"
                 >300 DH</span
               >
             </div>
           </div>
         </div>
-        <div class="flex mx-30 my-20">
-          <div class="basis-1/2 ml-35 mr-35 border-r-2 border-black pr-10">
-            <h6 class="text-3xl italic font-semibold">corporat Space</h6>
+        <div class="flex flex-col md:flex-row mx-4 md:mx-30 my-8 md:my-20">
+          <div
+            class="md:basis-1/2 md:ml-35 md:mr-35 md:pr-10 mb-8 md:mb-0"
+          >
+            <h6 class="text-xl md:text-3xl italic font-semibold">
+              corporat Space
+            </h6>
             <img
               src="./img/Corporate_Professional_1.jpg"
               alt=""
-              class="max-w-80 max-h-80 rounded-lg mt-5"
+              class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex">
+            <div class="flex flex-col md:flex-row">
               <button
-                class="basis-1/3 bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
+                class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-15 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
                 Rent
                 <svg
@@ -344,21 +406,23 @@
                 </svg>
               </button>
               <span
-                class="basis-2/3 text-end mr-40 self-center mt-5 text-xl font-bold"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-40"
                 >450 DH</span
               >
             </div>
           </div>
-          <div class="basis-1/2">
-            <h6 class="text-3xl italic font-semibold">Full-Service</h6>
+          <div class="md:basis-1/2">
+            <h6 class="text-xl md:text-3xl italic font-semibold">
+              Full-Service
+            </h6>
             <img
               src="./img/HighEndFullService.jpg"
               alt=""
-              class="max-w-80 max-h-80 rounded-lg mt-5"
+              class="w-full max-w-xs md:max-w-80 md:max-h-80 rounded-lg mt-5"
             />
-            <div class="flex">
+            <div class="flex flex-col md:flex-row">
               <button
-                class="basis-1/3 bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
+                class="bg-blue-600 py-2 px-5 flex font-medium text-center mt-5 md:mr-20 hover:bg-white hover:text-blue-600 transition hover:border-2 hover:border-blue-600 rounded"
               >
                 Rent
                 <svg
@@ -377,21 +441,23 @@
                 </svg>
               </button>
               <span
-                class="basis-2/3 text-end self-center mt-5 text-xl font-bold mr-48"
+                class="text-end self-center mt-5 text-xl font-bold md:ml-auto md:mr-48"
                 >500 DH</span
               >
             </div>
           </div>
         </div>
       </div>
-      <hr class="mx-50 border-2 border-gray-500" />
-      <div id="about" class="mt-20 mb-20">
+      <hr class="mx-4 md:mx-50 border-2 border-gray-500" />
+      <div id="about" class="mt-8 md:mt-20 mb-8 md:mb-20">
         <h2
-          class="text-5xl text-blue-500 font-semibold font-Roboto text-center"
+          class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center"
         >
           About Us
         </h2>
-        <p class="text-2xl leading-relaxed text-center mt-10 mx-30">
+        <p
+          class="text-lg md:text-2xl leading-relaxed text-center mt-4 md:mt-10 mx-4 md:mx-30"
+        >
           At <strong>Workly</strong>, we're more than just a workspace — we’re a
           community built for creators, entrepreneurs, freelancers, and remote
           teams. Founded on the belief that innovation thrives in inspiring
@@ -402,47 +468,59 @@
           tools you need to succeed.
         </p>
       </div>
-      <hr class="mx-50 border-2 border-gray-500" />
-      <div id="faq" class="mt-20 mb-15">
+      <hr class="mx-4 md:mx-50 border-2 border-gray-500" />
+      <div id="faq" class="mt-8 md:mt-20 mb-8 md:mb-15">
         <h2
-          class="text-5xl text-blue-500 font-semibold font-Roboto text-center"
+          class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center"
         >
           FAQ
         </h2>
-        <pre class="text-2xl leading-relaxed mt-20 mx-30 text-start">
-          <span class="font-extrabold text-3xl">1. What is a coworking space? </span><br>
-          A coworking space is a shared office
-          environment where individuals and teams can work independently or
-          collaboratively. It’s ideal for freelancers, startups, remote workers,
-          and businesses looking for a flexible and professional workspace. <br>
-          <span class="font-extrabold text-3xl">2. What types of plans do you offer? </span><br>
-          We offer flexible options including
-          hot desks, dedicated desks, private offices, meeting room rentals, and
-          virtual office packages. You can choose hourly, daily, monthly, or
-          custom plans based on your needs. <br>
-          <span class="font-extrabold text-3xl">3. Can I book a space for just one day? </span><br>
-          Yes! We offer day passes that give you full access to our
-          coworking space and amenities for the day. <br>
-          <span class="font-extrabold text-3xl">4. Do you offer high-speed internet? </span><br>
-          Absolutely. All our members enjoy fast, secure, and reliable
-          Wi-Fi throughout the workspace. <br>
-          <span class="font-extrabold text-3xl">5. Are meeting rooms included in the membership? </span><br>
-          Some plans include a set number of meeting room hours each
-          month. Additional time can be booked at member-discounted rates.
-        </pre>
+        <p
+          class="text-lg md:text-2xl leading-relaxed mt-8 md:mt-20 mx-4 md:mx-30 text-start"
+        >
+          <span class="font-bold leading-15 text-xl md:text-3xl"
+            >1. What is a coworking space? </span
+          ><br />
+          A coworking space is a shared office environment where individuals and
+          teams can work independently or collaboratively. It’s ideal for
+          freelancers, startups, remote workers, and businesses looking for a
+          flexible and professional workspace. <br />
+          <span class="font-bold leading-15 text-xl md:text-3xl"
+            >2. What types of plans do you offer? </span
+          ><br />
+          We offer flexible options including hot desks, dedicated desks,
+          private offices, meeting room rentals, and virtual office packages.
+          You can choose hourly, daily, monthly, or custom plans based on your
+          needs. <br />
+          <span class="font-bold leading-15 text-xl md:text-3xl"
+            >3. Can I book a space for just one day? </span
+          ><br />
+          Yes! We offer day passes that give you full access to our coworking
+          space and amenities for the day. <br />
+          <span class="font-bold leading-15 text-xl md:text-3xl"
+            >4. Do you offer high-speed internet? </span
+          ><br />
+          Absolutely. All our members enjoy fast, secure, and reliable Wi-Fi
+          throughout the workspace. <br />
+          <span class="font-bold leading-15 text-xl md:text-3xl"
+            >5. Are meeting rooms included in the membership? </span
+          ><br />
+          Some plans include a set number of meeting room hours each month.
+          Additional time can be booked at member-discounted rates.
+        </p>
       </div>
-      <hr class="mx-50 border-2 border-gray-500" />
-      <div id="contactus" class="mt-20 mb-20 p">
+      <hr class="mx-4 md:mx-50 border-2 border-gray-500" />
+      <div id="contactus" class="mt-8 md:mt-20 mb-8 md:mb-20">
         <h2
-          class="text-5xl text-blue-500 font-semibold font-Roboto text-center"
+          class="text-2xl md:text-5xl text-blue-500 font-semibold font-Roboto text-center"
         >
           Contact Us
         </h2>
         <form
           action=""
-          class="mx-70 mt-20 border-2 border-gray-400 rounded p-20"
+          class="mx-2 md:mx-70 mt-8 md:mt-20 border-2 border-gray-400 rounded p-4 md:p-20"
         >
-          <label for="fullname" class="italic text-3xl font-semibold"
+          <label for="fullname" class="italic text-lg md:text-3xl font-semibold"
             >Full Name</label
           ><br />
           <input
@@ -451,7 +529,8 @@
             name="fullname"
             class="border border-gray-400 focus:outline-none focus:ring-2 rounded-md w-full px-4 py-2 h-10 mb-5 mt-5"
           /><br />
-          <label for="email" class="italic text-3xl font-semibold">Email</label
+          <label for="email" class="italic text-lg md:text-3xl font-semibold"
+            >Email</label
           ><br />
           <input
             type="email"
@@ -459,7 +538,7 @@
             name="email"
             class="border border-gray-400 focus:outline-none focus:ring-2 rounded-md w-full px-4 py-2 h-10 mb-5 mt-5"
           /><br />
-          <label for="message" class="italic text-3xl font-semibold"
+          <label for="message" class="italic text-lg md:text-3xl font-semibold"
             >Your Message</label
           ><br />
           <textarea
@@ -469,24 +548,27 @@
             rows="8"
           ></textarea>
           <button
-            class="bg-black text-white rounded-md w-100 mx-50 hover:bg-white hover:text-black transition hover:border hover:border-black py-2"
+            class="bg-black text-white rounded-md w-full md:w-100 md:mx-50 hover:bg-white hover:text-black transition hover:border hover:border-black py-2"
           >
             Submit
           </button>
         </form>
       </div>
-      <footer class="bg-gray-100 text-white flex px-10">
+      <footer
+        class="bg-gray-100 text-white flex flex-col md:flex-row px-4 md:px-10 items-center pb-5"
+      >
         <img
           src="./img/logo/Work-removebg-preview.png"
           alt="Logo"
-          width="100px"
-          height="100px"
+          width="80px"
+          height="80px"
+          class="mb-4 md:mb-0"
         />
-        <div class="max-w-7xl mx-auto text-center mt-5">
-          <p class="text-lg text-gray-700">
+        <div class="max-w-7xl mx-auto text-center mt-2 md:mt-5">
+          <p class="text-base md:text-lg text-gray-700">
             © 2023 Workly. All rights reserved.
           </p>
-          <p class="text-sm text-gray-700">
+          <p class="text-xs md:text-sm text-gray-700">
             Follow us on
             <a href="#" class="text-blue-400 hover:underline">Twitter</a>,
             <a href="#" class="text-blue-400 hover:underline">Facebook</a>, and
