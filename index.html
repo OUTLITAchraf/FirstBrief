@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/fBrief.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <title>Workly</title>
   </head>
+
   <body>
-    <nav class="sticky top-0 bg-gray-100">
+    <nav class="sticky top-0 bg-gray-100 z-50">
       <div
         class="flex items-center justify-between max-w-7xl mx-auto px-4 py-2"
       >
@@ -88,7 +93,7 @@
                 class="relative bg-white rounded-lg shadow w-full my-10 mx-10 max-w-2xl lg:m-4"
               >
                 <div
-                  class="flex items-center justify-between ml-5 p-4 lg:mb-5 lg:ml-15 rounded-t dark:border-gray-600 border-gray-200"
+                  class="flex items-center justify-between ml-5 p-4 lg:mb-5 lg:ml-15 rounded-t"
                 >
                   <h3
                     class="text-xl font-semibold text-blue-500 font-roboto lg:text-3xl"
@@ -158,7 +163,7 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <main data-aos="fade" data-aos-delay="100">
       <div id="#" class="ml-4 mt-8 lg:ml-30">
         <h1
           class="text-3xl lg:text-6xl text-blue-500 font-semibold font-Roboto text-center lg:text-left"
@@ -183,6 +188,8 @@
       </div>
       <div
         class="flex flex-col lg:flex-row mt-8 lg:mt-16 ml-4 lg:ml-5 items-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <img
           src="./img/img.jpg"
@@ -205,7 +212,9 @@
         </div>
       </div>
       <div class="mt-8 lg:mt-16 ml-4 lg:ml-30">
-        <p class="text-2xl lg:text-4xl font-semibold text-center lg:text-left">
+        <p
+          class="text-2xl lg:text-4xl font-semibold text-center lg:text-left"
+        >
           Why choose us ?
         </p>
         <div
@@ -226,7 +235,9 @@
         </div>
       </div>
       <div class="flex flex-col lg:flex-row mt-8 lg:mt-16 ml-4 lg:ml-30">
-        <div class="lg:basis-1/4 lg:ml-15 lg:mr-20 mb-8 lg:mb-0">
+        <div
+          class="lg:basis-1/4 lg:ml-15 lg:mr-20 mb-8 lg:mb-0"
+        >
           <div
             class="flex items-center justify-center lg:justify-start mb-3 lg:mb-5"
           >
@@ -254,7 +265,9 @@
             Wellspace
           </p>
         </div>
-        <div class="lg:basis-1/4 lg:mr-20 mb-8 lg:mb-0">
+        <div
+          class="lg:basis-1/4 lg:mr-20 mb-8 lg:mb-0"
+        >
           <div
             class="flex items-center justify-center lg:justify-start mb-3 lg:mb-5"
           >
@@ -284,7 +297,9 @@
             coffee and tea for you to enjoy while working.
           </p>
         </div>
-        <div class="lg:basis-1/4 lg:mr-20 mb-8 lg:mb-0">
+        <div
+          class="lg:basis-1/4 lg:mr-20 mb-8 lg:mb-0"
+        >
           <div
             class="flex items-center justify-center lg:justify-start mb-3 lg:mb-5"
           >
@@ -313,7 +328,9 @@
             scanner and service.
           </p>
         </div>
-        <div class="lg:basis-1/4 lg:mr-40">
+        <div
+          class="lg:basis-1/4 lg:mr-40"
+        >
           <div
             class="flex items-center justify-center lg:justify-start mb-3 lg:mb-5"
           >
@@ -344,7 +361,9 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col lg:flex-row mt-8 lg:mt-10 mb-8 lg:mb-20">
+      <div
+        class="flex flex-col lg:flex-row mt-8 lg:mt-10 mb-8 lg:mb-20"
+      >
         <div class="lg:basis-2/3 ml-4 lg:ml-30 mt-4 lg:mt-10">
           <h3
             class="text-2xl lg:text-5xl text-blue-500 font-semibold font-Roboto text-center lg:text-left"
@@ -369,7 +388,9 @@
           />
         </div>
       </div>
-      <hr class="mx-4 lg:mx-50 border-2 border-gray-500" />
+      <hr
+        class="mx-4 lg:mx-50 border-2 border-gray-500"
+      />
       <div id="offre">
         <h3
           class="text-2xl lg:text-5xl text-blue-500 font-semibold font-Roboto text-center mt-8 lg:mt-20"
@@ -414,7 +435,9 @@
               >
             </div>
           </div>
-          <div class="lg:basis-1/2 ml-5">
+          <div
+            class="lg:basis-1/2 ml-5"
+          >
             <h6 class="text-xl lg:text-3xl italic font-semibold">
               Lifestyle Space
             </h6>
@@ -488,7 +511,9 @@
               >
             </div>
           </div>
-          <div class="lg:basis-1/2 ml-5">
+          <div
+            class="lg:basis-1/2 ml-5"
+          >
             <h6 class="text-xl lg:text-3xl italic font-semibold">
               Full-Service
             </h6>
@@ -525,8 +550,13 @@
           </div>
         </div>
       </div>
-      <hr class="mx-4 lg:mx-50 border-2 border-gray-500" />
-      <div id="about" class="mt-8 lg:mt-20 mb-8 lg:mb-20">
+      <hr
+        class="mx-4 lg:mx-50 border-2 border-gray-500"
+      />
+      <div
+        id="about"
+        class="mt-8 lg:mt-20 mb-8 lg:mb-20"
+      >
         <h2
           class="text-2xl lg:text-5xl text-blue-500 font-semibold font-Roboto text-center"
         >
@@ -545,46 +575,68 @@
           tools you need to succeed.
         </p>
       </div>
-      <hr class="mx-4 lg:mx-50 border-2 border-gray-500" />
+      <hr
+        class="mx-4 lg:mx-50 border-2 border-gray-500"
+      />
       <div id="faq" class="mt-8 lg:mt-20 mb-8 lg:mb-15">
         <h2
           class="text-2xl lg:text-5xl text-blue-500 font-semibold font-Roboto text-center"
         >
           FAQ
         </h2>
-        <p
+        <div
           class="text-lg ml-10 lg:text-2xl leading-relaxed mt-8 lg:mt-20 mx-4 lg:mx-30 text-start"
         >
-          <span class="font-bold leading-15 text-l lg:text-3xl"
-            >1. What is a coworking space? </span
-          ><br />
-          A coworking space is a shared office environment where individuals and
-          teams can work independently or collaboratively. It’s ideal for
-          freelancers, startups, remote workers, and businesses looking for a
-          flexible and professional workspace. <br />
-          <span class="font-bold leading-15 text-l lg:text-3xl"
-            >2. What types of plans do you offer? </span
-          ><br />
-          We offer flexible options including hot desks, dedicated desks,
-          private offices, meeting room rentals, and virtual office packages.
-          You can choose hourly, daily, monthly, or custom plans based on your
-          needs. <br />
-          <span class="font-bold leading-15 text-l lg:text-3xl"
-            >3. Can I book a space for just one day? </span
-          ><br />
-          Yes! We offer day passes that give you full access to our coworking
-          space and amenities for the day. <br />
-          <span class="font-bold leading-15 text-l lg:text-3xl"
-            >4. Do you offer high-speed internet? </span
-          ><br />
-          Absolutely. All our members enjoy fast, secure, and reliable Wi-Fi
-          throughout the workspace. <br />
-          <span class="font-bold leading-15 text-l lg:text-3xl"
-            >5. Are meeting rooms included in the membership? </span
-          ><br />
-          Some plans include a set number of meeting room hours each month.
-          Additional time can be booked at member-discounted rates.
-        </p>
+          <div>
+            <h5 class="font-bold text-l lg:text-3xl lg:my-5">
+              1. What is a coworking space?
+            </h5>
+            <p>
+              A coworking space is a shared office environment where individuals
+              and teams can work independently or collaboratively. It’s ideal
+              for freelancers, startups, remote workers, and businesses looking
+              for a flexible and professional workspace.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold text-l lg:text-3xl lg:my-5">
+              2. What types of plans do you offer?
+            </h5>
+            <p>
+              We offer flexible options including hot desks, dedicated desks,
+              private offices, meeting room rentals, and virtual office
+              packages. You can choose hourly, daily, monthly, or custom plans
+              based on your needs.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold text-l lg:text-3xl lg:my-5">
+              3. Can I book a space for just one day?
+            </h5>
+            <p>
+              Yes! We offer day passes that give you full access to our
+              coworking space and amenities for the day.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold text-l lg:text-3xl lg:my-5">
+              4. Do you offer high-speed internet?
+            </h5>
+            <p>
+              Absolutely. All our members enjoy fast, secure, and reliable Wi-Fi
+              throughout the workspace.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-bold text-l lg:text-3xl lg:my-5">
+              5. Are meeting rooms included in the membership?
+            </h5>
+            <p>
+              Some plans include a set number of meeting room hours each month.
+              Additional time can be booked at member-discounted rates.
+            </p>
+          </div>
+        </div>
       </div>
       <footer
         class="bg-gray-100 text-white flex flex-col lg:flex-row px-4 lg:px-10 items-center pb-5"
@@ -611,7 +663,12 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
+      AOS.init({
+        duration: 800, // Animation duration in ms
+        once: true, // Animation only once
+      });
       // Initialize EmailJS
       emailjs.init("R20SvV3hu-vnbZax7"); // Replace with your Public Key
 
