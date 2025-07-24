@@ -118,67 +118,46 @@
                   </button>
                 </div>
 
-                  <form
-                    action=""
-                    class="mx-10 lg:mx-20"
+                <form action="" id="contact-form" class="mx-10 lg:mx-20">
+                  <label for="fullname" class="italic lg:text-l font-semibold"
+                    >Full Name</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg my-3 w-full px-4 py-2 h-10 lg:mb-5 lg:mt-5"
+                  /><br />
+                  <label for="email" class="italic lg:text-l font-semibold"
+                    >Email</label
+                  ><br />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg my-3 w-full px-4 py-2 h-10 lg:mb-5 lg:mt-5"
+                  /><br />
+                  <label for="message" class="italic lg:text-l font-semibold"
+                    >Your Message</label
+                  ><br />
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg my-3 w-full px-4 py-2 lg:mb-5 lg:mt-5"
+                    rows="5"
+                  ></textarea>
+                  <button
+                    class="bg-black text-white rounded-lg mb-3 w-full lg:w-100 lg:ml-15 lg:mb-5 space-x-3 hover:bg-white hover:text-black transition hover:border hover:border-black py-2"
                   >
-                    <label
-                      for="fullname"
-                      class="italic lg:text-l font-semibold"
-                      >Full Name</label
-                    ><br />
-                    <input
-                      type="text"
-                      id="fullname"
-                      name="fullname"
-                      class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg my-3 w-full px-4 py-2 h-10 lg:mb-5 lg:mt-5"
-                    /><br />
-                    <label
-                      for="email"
-                      class="italic lg:text-l font-semibold"
-                      >Email</label
-                    ><br />
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg my-3 w-full px-4 py-2 h-10 lg:mb-5 lg:mt-5"
-                    /><br />
-                    <label
-                      for="message"
-                      class="italic lg:text-l font-semibold"
-                      >Your Message</label
-                    ><br />
-                    <textarea
-                      name="message"
-                      id="message"
-                      class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg my-3 w-full px-4 py-2 lg:mb-5 lg:mt-5"
-                      rows="5"
-                    ></textarea>
-                    <button
-                      class="bg-black text-white rounded-lg mb-3 w-full lg:w-100 lg:ml-15 lg:mb-5 space-x-3 hover:bg-white hover:text-black transition hover:border hover:border-black py-2"
-                    >
-                      Submit
-                    </button>
-                  </form>
+                    Submit
+                  </button>
+                </form>
               </div>
             </div>
           </li>
         </ul>
       </div>
     </nav>
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const navMenu = document.getElementById("nav-menu");
-      menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("hidden");
-      });
-
-      function toggleModal() {
-        const modal = document.getElementById("custom-modal");
-        modal.classList.toggle("hidden");
-      }
-    </script>
     <main>
       <div id="#" class="ml-4 mt-8 lg:ml-30">
         <h1
@@ -607,51 +586,6 @@
           Additional time can be booked at member-discounted rates.
         </p>
       </div>
-      <hr class="mx-4 lg:mx-50 border-2 border-gray-500" />
-      <div id="contactus" class="mt-8 lg:mt-20 mb-8 lg:mb-20">
-        <h2
-          class="text-2xl lg:text-5xl text-blue-500 font-semibold font-Roboto text-center"
-        >
-          Contact Us
-        </h2>
-        <form
-          action=""
-          class="mx-2 lg:mx-70 mt-8 lg:mt-20 border-2 border-gray-400 rounded p-4 lg:p-20"
-        >
-          <label for="fullname" class="italic text-lg lg:text-3xl font-semibold"
-            >Full Name</label
-          ><br />
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg w-full px-4 py-2 h-10 mb-5 mt-5"
-          /><br />
-          <label for="email" class="italic text-lg lg:text-3xl font-semibold"
-            >Email</label
-          ><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg w-full px-4 py-2 h-10 mb-5 mt-5"
-          /><br />
-          <label for="message" class="italic text-lg lg:text-3xl font-semibold"
-            >Your Message</label
-          ><br />
-          <textarea
-            name="message"
-            id="message"
-            class="border border-gray-400 focus:outline-none focus:ring-2 rounded-lg w-full px-4 py-2 mb-5 mt-5"
-            rows="8"
-          ></textarea>
-          <button
-            class="bg-black text-white rounded-lg w-full lg:w-100 lg:mx-50 hover:bg-white hover:text-black transition hover:border hover:border-black py-2"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
       <footer
         class="bg-gray-100 text-white flex flex-col lg:flex-row px-4 lg:px-10 items-center pb-5"
       >
@@ -664,7 +598,7 @@
         />
         <div class="max-w-7xl mx-auto text-center mt-2 lg:mt-5">
           <p class="text-base lg:text-lg text-gray-700">
-            © 2023 Workly. All rights reserved.
+            © 2025 Workly. All rights reserved.
           </p>
           <p class="text-xs lg:text-sm text-gray-700">
             Follow us on
@@ -675,5 +609,39 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      // Initialize EmailJS
+      emailjs.init("R20SvV3hu-vnbZax7"); // Replace with your Public Key
+
+      // Send form data
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_2vkj2cs", "template_whwt7ve", this).then(
+            function (response) {
+              alert("Email sent successfully!");
+              console.log("SUCCESS!", response.status, response.text);
+            },
+            function (error) {
+              alert("Failed to send email.");
+              console.log("FAILED...", error);
+            }
+          );
+        });
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+      });
+
+      function toggleModal() {
+        const modal = document.getElementById("custom-modal");
+        modal.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
