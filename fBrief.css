@@ -1,6 +1,6 @@
-* {
-    scroll-padding-top: 20%;
+html{
     scroll-behavior: smooth;
+    scroll-padding-top: 20%;
 }
 
 @media (max-width: 768px) {
