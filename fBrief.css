@@ -3,8 +3,3 @@ html{
     scroll-padding-top: 20%;
 }
 
-@media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
-    }
-}
